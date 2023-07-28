@@ -82,52 +82,83 @@ button {
 }
 
 .hide {
-    display: none;
+    height: 0px;
+    visibility: hidden;
+    animation: rapid 0.6s linear;
 }
 
 .show {
-    display: block;
+    visibility: visible;
+    animation: showing 0.6s linear;
+    height: 120px;
 }
 
 .off {
-    display: none;
+    height: 0px;
+    visibility: hidden;
+    animation: rapid 0.6s linear;
 }
 
 .on {
-    display: block;
+    visibility: visible;
     transition: 0.6s;
-    animation: slow 0.6s linear;
+    animation: showing 0.6s linear;
+    height: auto;
 }
 
 .offtwo {
-    display: none;
+    height: 0px;
+    visibility: hidden;
+    animation: rapid 0.6s linear;
 }
 
 .ontwo {
-    display: block;
+    visibility: visible;
     transition: 0.6s;
-    animation: slow 0.6s linear;
+    animation: showing 0.6s linear;
+    height: auto;
 }
 
 .offthree {
-    display: none;
+    height: 0px;
+    visibility: hidden;
+    animation: rapid 0.6s linear;
 }
 
 .onthree {
-    display: block;
+    visibility: visible;
     transition: 0.6s;
-    animation: slow 0.6s linear;
+    animation: showing 0.6s linear;
+    height: auto;
 }
 
-@keyframes slow {
-    from {
-        transform: translateY(200px);
+@keyframes showing {
+    0% {
+        transform: translateX(200px);
         opacity: 0;
-        height: auto;
+        height: 0px;
+        visibility: hidden;
     }
-    to {
+    100% {
+        transform: translateX(0px);
         opacity: 1;
-        height: auto;
+        height: 120px;
+        visibility: visible;
+    }
+}
+
+@keyframes rapid {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+        visibility: visible;
+        height: 100px;
+    }
+    100% {
+        transform: translateX(-200px);
+        visibility: hidden;
+        opacity: 0;
+        height: 0px;
     }
 }
 

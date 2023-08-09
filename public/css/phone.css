@@ -16,6 +16,35 @@
         padding: 0.5em !important;
         overflow: hidden;
     }
+    .togglingMenu {
+        position: fixed;
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        z-index: 20;
+        top: 46px;
+        width: 100%;
+        height: 300px;
+        background-color: #171616af;
+        overflow: hidden;
+        animation: fullroundoff 1s infinite;
+    }
+    @keyframes fullroundoff {
+        from {
+            opacity: 1;
+            border-radius: 0%;
+            width: 100%;
+            visibility: visible;
+            transform: translateX(0px) translateY(0px);
+        }
+        to {
+            border-radius: 100%;
+            transform: translateX(-200px) translateY(-70px);
+            opacity: 1;
+            width: 80%;
+            visibility: hidden;
+        }
+    }
     .togglingMenu.active {
         position: fixed;
         animation: fullround 1s 1;

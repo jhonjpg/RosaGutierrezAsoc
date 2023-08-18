@@ -28,6 +28,7 @@
         background-color: #171616af;
         overflow: hidden;
         animation: fullroundoff 1s infinite;
+        transition: all 1s;
     }
     @keyframes fullroundoff {
         from {
@@ -57,6 +58,7 @@
         height: 300px;
         background-color: #171616af;
         overflow: hidden;
+        transition: all 1s;
     }
     @keyframes fullround {
         from {
@@ -78,6 +80,7 @@
         gap: 5px;
         padding-top: 10px;
         align-items: center;
+        transition: all 1s;
     }
     .togglingMenu li {
         display: flex !important;

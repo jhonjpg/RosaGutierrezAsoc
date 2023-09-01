@@ -18,7 +18,7 @@ const Auth = () => {
         <Routes>
 
           <Route index element={<Home />}></Route>
-          <Route path="/abogada/" element={<Home />}></Route>
+          <Route path="/RosaGutierrezAsoc/" element={<Home />}></Route>
           <Route path="*" element={<NotfoundPage />}></Route>
 
 

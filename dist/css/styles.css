@@ -396,7 +396,7 @@ h3 div span {
     padding: 10px;
     font-size: 13px;
     width: 90%;
-    text-align: justify;
+    text-align: center;
     color: rgb(29, 29, 29);
 }
 
@@ -529,7 +529,7 @@ h3 div span {
     font-size: 17px;
     color: black;
     padding: 10px !important;
-    text-align: justify;
+    text-align: center;
 }
 
 .formulario {

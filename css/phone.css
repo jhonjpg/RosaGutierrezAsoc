@@ -28,6 +28,7 @@
         background-color: #171616af;
         overflow: hidden;
         animation: fullroundoff 1s infinite;
+        transition: all 1s;
     }
     @keyframes fullroundoff {
         from {
@@ -57,6 +58,7 @@
         height: 300px;
         background-color: #171616af;
         overflow: hidden;
+        transition: all 1s;
     }
     @keyframes fullround {
         from {
@@ -78,6 +80,7 @@
         gap: 5px;
         padding-top: 10px;
         align-items: center;
+        transition: all 1s;
     }
     .togglingMenu li {
         display: flex !important;
@@ -238,8 +241,13 @@
     }
     .slash {
         width: 95% !important;
-        height: 300px;
+        height: 300px !important;
         border-radius: 10px;
+        width: 190px;
+        height: 254px;
+        border-radius: 30px;
+        background: rgb(228, 228, 228);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
         overflow: hidden;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
@@ -248,7 +256,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 50%;
+        height: 30%;
     }
     .one h6 {
         font-size: small;

@@ -1,0 +1,655 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: #cacaca;
+    scroll-behavior: smooth !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    width: 100%;
+}
+
+.phoneNavbar {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    z-index: 50;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 0.7em !important;
+}
+
+h2 {
+    display: flex;
+    width: 30%;
+    justify-self: flex-start;
+    font-size: 1.5em;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 628px;
+    height: 100%;
+    font-size: 1.3em;
+    list-style: none;
+}
+
+.navbar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+    height: 98%;
+}
+
+.navbar ul a {
+    height: 98%;
+}
+
+.navbar li:hover {
+    border-top: 2px solid rgb(187 130 5);
+}
+
+button {
+    font-size: 16px;
+    padding: 0.5em !important;
+    width: 22%;
+    border-radius: 10px;
+    background-color: rgb(187 130 5);
+    color: white;
+    cursor: pointer;
+}
+
+.hide {
+    height: 0px;
+    visibility: hidden;
+    animation: rapid 0.6s linear;
+}
+
+.show {
+    visibility: visible;
+    animation: showing 0.6s linear;
+    height: 170px;
+}
+
+.off {
+    height: 0px;
+    visibility: hidden;
+    animation: rapid 0.6s linear;
+}
+
+.on {
+    visibility: visible;
+    transition: 0.6s;
+    animation: showing 0.6s linear;
+    height: auto;
+}
+
+.offtwo {
+    height: 0px;
+    visibility: hidden;
+    animation: rapid 0.6s linear;
+}
+
+.ontwo {
+    visibility: visible;
+    transition: 0.6s;
+    animation: showing 0.6s linear;
+    height: auto;
+}
+
+.offthree {
+    height: 0px;
+    visibility: hidden;
+    animation: rapid 0.6s linear;
+}
+
+.onthree {
+    visibility: visible;
+    transition: 0.6s;
+    animation: showing 0.6s linear;
+    height: auto;
+}
+
+@keyframes showing {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+        height: 0px;
+        visibility: hidden;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+        height: 120px;
+        visibility: visible;
+    }
+}
+
+@keyframes rapid {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+        visibility: visible;
+        height: 100px;
+    }
+    100% {
+        transform: translateX(-200px);
+        visibility: hidden;
+        opacity: 0;
+        height: 0px;
+    }
+}
+
+.frontPage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("assets//imgs/lawFront.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 1em !important;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    min-width: 300px;
+}
+
+.opacity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+}
+
+.frontPage h3 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 89%;
+}
+
+.experience {
+    position: absolute;
+    bottom: -150px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 250px;
+    gap: 10px;
+}
+
+.experience div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    min-width: 180px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#hundred {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    min-width: 200px;
+    height: 100%;
+    box-shadow: rgba(187 130 5) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.experience div h4 {
+    font-size: 2.8em;
+    color: #000;
+}
+
+.experience div p {
+    font-size: 15px;
+    color: #000;
+    width: 90%;
+}
+
+.us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    width: 100%;
+    padding: 0.4em !important;
+    margin-top: 190px !important;
+}
+
+.firtsPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 45%;
+    width: 100%;
+}
+
+.photo {
+    position: relative;
+    height: 400px;
+    min-width: 440px;
+}
+
+aside::before {
+    content: "";
+    font-size: 6em;
+    position: absolute;
+    right: 265px;
+    top: -32px;
+    min-width: 200px;
+    height: 200px;
+    background-color: rgba(187 130 5);
+    clip-path: polygon(100% 0%, 9% 8%, 6% 11%, 0 70%, 0 0, 53% 0);
+}
+
+aside {
+    background: url("https://images.pexels.com/photos/4427622/pexels-photo-4427622.jpeg?auto=compress&cs=tinysrgb&w=1200")no-repeat center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.clientSaftly {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 35%;
+    height: 90%;
+    padding: 10px !important;
+}
+
+.clientSaftly h3 {
+    font-size: 17px;
+    color: rgba(187 130 5);
+}
+
+.clientSaftly h5 {
+    font-size: 1.5em;
+    width: 95%;
+    color: #000;
+}
+
+.clientSaftly p {
+    font-size: 17px;
+    width: 95%;
+    color: #000;
+}
+
+.clientSaftly button {
+    width: 40%;
+    padding: 8px !important;
+    align-self: center;
+    border-radius: 0px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.secondPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 65%;
+    height: 45%;
+}
+
+.secondPart h5 {
+    font-size: 16px;
+    color: rgb(187 130 5);
+}
+
+.secondPart h6 {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.especialization {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 180px;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    padding: 1em !important;
+}
+
+.card h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 15px;
+    width: 100%;
+    height: 80%;
+    color: black;
+}
+
+h3 div {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    color: black;
+}
+
+h3 div span {
+    font-size: 28px;
+    color: rgba(187 130 5);
+}
+
+.card p {
+    padding: 10px;
+    font-size: 13px;
+    width: 90%;
+    text-align: justify;
+    color: rgb(29, 29, 29);
+}
+
+.card button {
+    padding: 0px!important;
+    font-size: 10px;
+    align-self: center;
+    width: 20%;
+    border: none;
+    background: none;
+    color: rgba(187 130 5);
+    font-size: 13px;
+}
+
+.consult {
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    background: url("https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=1200")no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 30px
+}
+
+.consult h4 {
+    font-size: 4em;
+    color: white;
+}
+
+.consult p {
+    font-size: 1.6em;
+    color: white;
+}
+
+.consult button {
+    width: 120px;
+    color: white;
+    margin-top: 30px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    padding-top: 2em !important;
+}
+
+.reviews h5 {
+    align-self: start;
+    font-size: 14px;
+    color: rgb(187 130 5);
+    margin-left: 20px !important;
+}
+
+.reviews h6 {
+    align-self: start;
+    font-size: 20px;
+    color: #000;
+    margin-left: 20px !important;
+}
+
+.reviewSlide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+    align-self: center;
+    overflow: hidden;
+}
+
+.slash {
+    width: 80% !important;
+    height: 420px !important;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.miniature {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.one img {
+    margin-left: 7px !important;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.one h6 {
+    text-align: center;
+    width: 30%;
+    height: 30%;
+    text-transform: uppercase;
+}
+
+.two {
+    width: 100%;
+    height: 50%;
+}
+
+.two p {
+    width: 90%;
+    height: 50%;
+    font-size: 17px;
+    color: black;
+    padding: 10px !important;
+    text-align: justify;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background: url("https://images.pexels.com/photos/6077422/pexels-photo-6077422.jpeg?auto=compress&cs=tinysrgb&w=1200")no-repeat center;
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario h5 {
+    font-size: 2em;
+    color: rgb(187 130 5);
+    font-weight: bold;
+}
+
+.formulario strong {
+    font-size: 3em;
+    font-weight: 500;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 40%;
+    height: 60%;
+    padding-top: 14px !important;
+}
+
+input {
+    width: 70%;
+    height: 25px;
+    padding: 5px !important;
+}
+
+textarea {
+    width: 70%;
+    padding: 5px !important;
+}
+
+input[type="submit"] {
+    width: 70%;
+    height: 35px;
+    padding: 5px !important;
+    background-color: rgb(187 130 5);
+    color: white;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 50px;
+}
+
+.contact ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 77%;
+    list-style: none;
+}
+
+.contact li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    width: 23%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.contact li h6 {
+    font-size: 14px;
+    color: rgb(187 130 5);
+}
+
+.gmail {
+    display: flex;
+    width: 24%;
+    flex-grow: 3;
+    font-size: 18px !important;
+    overflow: hidden;
+}
+
+.gmail p {
+    width: 90% !important;
+    height: 40px !important;
+}
+
+.contact li p {
+    color: black;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+i {
+    color: rgb(187 130 5);
+    font-size: 2em;
+}
